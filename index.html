@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content-wr">
+    <div class="canvas-wr">
+        <canvas></canvas>
+    </div>
+    <aside>
+      <div class="control-wr">
+        <form name="canvasValues" action="">
+          <div class="form-item-wr">
+
+            <div class="bg-color-wr form-item">
+              <p class="hide">Скрыть</p>
+              <label for="bgColorChange">Цвет фона</label>
+              <div class="form-input-wr">
+                <input type="color" name="bgColorChange" id="bgColorChange" value="#ffc2c2">
+              </div>
+            </div>
+
+            <div class="circlesNumber-wr form-item">
+              <p class="hide">Скрыть</p>
+              <label for="circlesNumber"> Количество кругов</label>
+              <div class="form-input-wr">
+                <input  name="circlesNumber" id="circlesNumber" type="text" value="15" required>
+                <div class="press">
+                  <label for="circlesNumber" class="press1 arrow1"> </label>
+                  <label for="circlesNumber" class="press-1 arrow2"> </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="speed-wr form-item">
+              <p class="hide">Скрыть</p>
+              <label for="speedValue"> Cкорость</label>
+              <div class="form-input-wr">
+                <input  name="speedValue" id="speedValue" type="text" value="0.02" required>
+                <div class="press">
+                  <label for="speedValue" class="pressSpeed arrow1"> </label>
+                  <label for="speedValue" class="pressSpeed-1 arrow2"> </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="min-radius-wr form-item">
+              <p class="hide">Скрыть</p>
+              <label for="minradiusValue"> Мин-радиус</label>
+              <div class="min-radius-value form-input-wr">
+                <input  name="minradiusValue" id="minradiusValue" type="text" value="300" required>
+                <div class="press">
+                  <label for="minradiusValue" class="minRadius10 arrow1"> </label>
+                  <label for="minradiusValue" class="minRadius-10 arrow2"> </label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="max-radius-wr form-item">
+              <p class="hide">Скрыть</p>
+              <label for="maxradiusValue"> Мax-радиус</label>
+              <div class="max-radius-value form-input-wr">
+                <input  name="maxradiusValue" id="maxradiusValue" type="text" value="600" required>
+                <div class="press">
+                  <label for="maxradiusValue" class="pressMaxRadius10 arrow1"> </label>
+                  <label for="maxradiusValue" class="pressMaxRadius-10 arrow2"> </label>
+                </div>
+              </div>
+            </div>
+            <p class="title">Настройка градиента</p>
+            <div class="first-color-wr form-item">
+              <p class="hide">Скрыть</p>
+              <p >Первый цвет: hsla (XX, 100%, 50%, 1)</p>
+              <div class="form-input-wr form-select-wr">
+                <label for="firstСolorSat">Saturation (0-100%)</label>
+                <select  name="firstСolorSat" id="firstСolorSat" required>
+                  <option value="10%">10%</option>
+                  <option value="20%">20%</option>
+                  <option value="30%">30%</option>
+                  <option value="40%">40%</option>
+                  <option value="50%">50%</option>
+                  <option value="60%">60%</option>
+                  <option value="70%">70%</option>
+                  <option value="80%">80%</option>
+                  <option value="90%">90%</option>
+                  <option selected value="100%">100%</option>
+                </select>
+                <label for="firstСolorLight">Lightness (0-100%)</label>
+                <select  name="firstСolorLight" id="firstСolorLigh" value="50%" required>
+                  <option value="10%">10%</option>
+                  <option value="20%">20%</option>
+                  <option value="30%">30%</option>
+                  <option value="40%">40%</option>
+                  <option selected value="50%">50%</option>
+                  <option value="60%">60%</option>
+                  <option value="70%">70%</option>
+                  <option value="80%">80%</option>
+                  <option value="90%">90%</option>
+                  <option value="100%">100%</option>
+                </select>
+                <label for="firstСolorOp">Opacity (0-1)</label>
+                <select  name="firstСolorOp" id="firstСolorValue" value="1" required>
+                  <option value="0">0</option>
+                  <option value="0.1">0.1</option>
+                  <option value="0.2">0.2</option>
+                  <option value="0.3">0.3</option>
+                  <option value="0.4">0.4</option>
+                  <option value="0.5">0.5</option>
+                  <option value="0.6">0.6</option>
+                  <option value="0.7">0.7</option>
+                  <option value="0.8">0.8</option>
+                  <option value="0.9">0.9</option>
+                  <option selected value="1">1</option>
+                </select>
+              </div>
+            </div>
+            <div class="second-color-wr form-item">
+              <p>Второй цвет: hsla (XX, 100%, 50%, 0)</p>
+              <p class="hide">Скрыть</p>
+              <div class="form-input-wr form-select-wr">
+                <label for="secondСolorSat">Saturation 0-100%</label>
+                <select  name="secondСolorSat" id="secondСolorSat" required>
+                  <option value="10%">10%</option>
+                  <option value="20%">20%</option>
+                  <option value="30%">30%</option>
+                  <option value="40%">40%</option>
+                  <option value="50%">50%</option>
+                  <option value="60%">60%</option>
+                  <option value="70%">70%</option>
+                  <option value="80%">80%</option>
+                  <option value="90%">90%</option>
+                  <option selected value="100%">100%</option>
+                </select>
+                <label for="secondСolorLight">Lightness 0-100%</label>
+                <select  name="secondСolorLight" id="secondСolorLigh" required>
+                  <option value="10%">10%</option>
+                  <option value="20%">20%</option>
+                  <option value="30%">30%</option>
+                  <option value="40%">40%</option>
+                  <option selected value="50%">50%</option>
+                  <option value="60%">60%</option>
+                  <option value="70%">70%</option>
+                  <option value="80%">80%</option>
+                  <option value="90%">90%</option>
+                  <option value="100%">100%</option>
+                </select>
+                <label for="secondСolorOp">Opacity 0-1</label>
+                <select  name="secondСolorOp" id="secondСolorValue" required>
+                  <option selected value="0">0</option>
+                  <option value="0.1">0.1</option>
+                  <option value="0.2">0.2</option>
+                  <option value="0.3">0.3</option>
+                  <option value="0.4">0.4</option>
+                  <option value="0.5">0.5</option>
+                  <option value="0.6">0.6</option>
+                  <option value="0.7">0.7</option>
+                  <option value="0.8">0.8</option>
+                  <option value="0.9">0.9</option>
+                  <option  value="1">1</option>
+                </select>
+              </div>
+            </div>
+            <div class="color-overlay-wr form-item">
+              <p class="hide">Скрыть</p>
+              <label for="colorOverlay">Тип наложения цветов</label>
+              <div class="form-input-wr form-select-wr">
+                <select  name="colorOverlay" id="colorOverlay" required>
+                  <option value="source-over">source-over</option>
+                  <option value="destination-over">destination-over</option>
+                  <option value="lighter">lighter</option>
+                  <option value="xor">xor</option>
+                  <option value="multiply">multiply</option>
+                  <option selected value="overlay">overlay</option>
+                  <option value="darken">darken</option>
+                  <option value="color-dodge">color-dodge</option>
+                  <option value="difference">difference</option>
+                  <option value="hue">hue</option>
+                  <option value="saturation">saturation</option>
+                  <option value="luminosity">luminosity</option>
+                  <option value="color">color</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </aside>
+  </div>
+  <div class="animation">
+    <div class="animation-item animation-item-1">
+    </div>
+    <div class="animation-item animation-item-2">
+    </div>
+    <div class="animation-item animation-item-3">
+    </div>
+    <div class="animation-item animation-item-4">
+    </div>
+    <div class="animation-item animation-item-5">
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+    color: #fff;
+  background-color: #5c6063;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+label{
+  font-weight: bold;
+  color: #fff;
+}
+
+input,
+select {
+  width: 95%;
+  padding: 5px;
+  padding-left: 5px;
+  margin-top: 5px;
+  border: 2px solid #5c6063;
+  outline: 0;
+  background-color: #5c6063;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+select {
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.title{
+  margin: 10px;
+  font-weight: bold;
+}
+
+.content-wr {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.canvas-wr {
+  position: fixed;
+  height: 80%;
+  width: 80%;
+  border: 5px solid #293039;
+}
+
+aside {
+  position: fixed;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #293039;
+}
+
+.control-wr {
+  padding: 10px 15px;
+  background-color: #293039;
+}
+
+.form-item-wr {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 3px;
+  padding-right: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  color: #999ea3;
+}
+
+.form-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #383f47;
+  color: #fff;
+}
+
+.form-input-wr {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-select-wr {
+  display: flex;
+  flex-direction: column;
+}
+
+.press{
+  display: flex;
+  flex-direction: column;
+  width: 14px;
+  height: 100%;
+}
+
+.arrow1 {
+  border: 6px solid transparent;
+  border-bottom: 8px solid #999ea3;
+  transform: translateY(5px);
+  background-color: #5c6063;
+}
+
+.arrow2  {
+  border: 6px solid transparent;
+  border-top: 8px solid #999ea3;
+  transform: translateY(7px);
+  background-color: #5c6063;
+}
+
+.animation {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  height: 19%;
+  width: 80%;
+}
+
+.animation-item {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  width: 25%;
+  overflow: hidden;
+  border: 5px solid #293039;
+}
+
+.animation-img {
+  width: 100%;
+}
+
+.animation-item-1 {
+  background-image: url(img/1.png);
+  background-size: cover;
+}
+
+.animation-item-2 {
+  background-image: url(img/2.png);
+  background-size: cover;
+}
+
+.animation-item-3 {
+  background-image: url(img/3.png);
+  background-size: cover;
+}
+
+.animation-item-4 {
+  background-image: url(img/4.png);
+  background-size: cover;
+}
+
+.animation-item-5 {
+  background-image: url(img/5.png);
+  background-size: cover;
+}
+
+
+
+
+
