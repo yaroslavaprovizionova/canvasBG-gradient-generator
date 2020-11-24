@@ -6,13 +6,18 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <div class="content-wr">
+
+    <!-- CANVAS BLOCK -->
     <div class="canvas-wr">
-        <canvas></canvas>
+      <canvas></canvas>
     </div>
+
+    <!-- ASIDE BLOCK -->
     <aside>
       <div class="control-wr">
         <form name="canvasValues" action="">
@@ -32,8 +37,8 @@
               <div class="form-input-wr">
                 <input  name="circlesNumber" id="circlesNumber" type="text" value="15" required>
                 <div class="press">
-                  <label for="circlesNumber" class="press1 arrow1"> </label>
-                  <label for="circlesNumber" class="press-1 arrow2"> </label>
+                  <label for="circlesNumber" class="press1 arrowUp"> </label>
+                  <label for="circlesNumber" class="press-1 arrowDown"> </label>
                 </div>
               </div>
             </div>
@@ -44,8 +49,8 @@
               <div class="form-input-wr">
                 <input  name="speedValue" id="speedValue" type="text" value="0.02" required>
                 <div class="press">
-                  <label for="speedValue" class="pressSpeed arrow1"> </label>
-                  <label for="speedValue" class="pressSpeed-1 arrow2"> </label>
+                  <label for="speedValue" class="pressSpeed arrowUp"> </label>
+                  <label for="speedValue" class="pressSpeed-1 arrowDown"> </label>
                 </div>
               </div>
             </div>
@@ -56,8 +61,8 @@
               <div class="min-radius-value form-input-wr">
                 <input  name="minradiusValue" id="minradiusValue" type="text" value="300" required>
                 <div class="press">
-                  <label for="minradiusValue" class="minRadius10 arrow1"> </label>
-                  <label for="minradiusValue" class="minRadius-10 arrow2"> </label>
+                  <label for="minradiusValue" class="minRadius10 arrowUp"> </label>
+                  <label for="minradiusValue" class="minRadius-10 arrowDown"> </label>
                 </div>
               </div>
             </div>
@@ -68,15 +73,18 @@
               <div class="max-radius-value form-input-wr">
                 <input  name="maxradiusValue" id="maxradiusValue" type="text" value="600" required>
                 <div class="press">
-                  <label for="maxradiusValue" class="pressMaxRadius10 arrow1"> </label>
-                  <label for="maxradiusValue" class="pressMaxRadius-10 arrow2"> </label>
+                  <label for="maxradiusValue" class="pressMaxRadius10 arrowUp"> </label>
+                  <label for="maxradiusValue" class="pressMaxRadius-10 arrowDown"> </label>
                 </div>
               </div>
             </div>
+
             <p class="title">Настройка градиента</p>
+
             <div class="first-color-wr form-item">
               <p class="hide">Скрыть</p>
               <p >Первый цвет: hsla (XX, 100%, 50%, 1)</p>
+
               <div class="form-input-wr form-select-wr">
                 <label for="firstСolorSat">Saturation (0-100%)</label>
                 <select  name="firstСolorSat" id="firstСolorSat" required>
@@ -91,6 +99,7 @@
                   <option value="90%">90%</option>
                   <option selected value="100%">100%</option>
                 </select>
+
                 <label for="firstСolorLight">Lightness (0-100%)</label>
                 <select  name="firstСolorLight" id="firstСolorLigh" value="50%" required>
                   <option value="10%">10%</option>
@@ -104,6 +113,7 @@
                   <option value="90%">90%</option>
                   <option value="100%">100%</option>
                 </select>
+
                 <label for="firstСolorOp">Opacity (0-1)</label>
                 <select  name="firstСolorOp" id="firstСolorValue" value="1" required>
                   <option value="0">0</option>
@@ -120,10 +130,12 @@
                 </select>
               </div>
             </div>
+
             <div class="second-color-wr form-item">
               <p>Второй цвет: hsla (XX, 100%, 50%, 0)</p>
               <p class="hide">Скрыть</p>
               <div class="form-input-wr form-select-wr">
+
                 <label for="secondСolorSat">Saturation 0-100%</label>
                 <select  name="secondСolorSat" id="secondСolorSat" required>
                   <option value="10%">10%</option>
@@ -137,6 +149,7 @@
                   <option value="90%">90%</option>
                   <option selected value="100%">100%</option>
                 </select>
+
                 <label for="secondСolorLight">Lightness 0-100%</label>
                 <select  name="secondСolorLight" id="secondСolorLigh" required>
                   <option value="10%">10%</option>
@@ -150,6 +163,7 @@
                   <option value="90%">90%</option>
                   <option value="100%">100%</option>
                 </select>
+
                 <label for="secondСolorOp">Opacity 0-1</label>
                 <select  name="secondСolorOp" id="secondСolorValue" required>
                   <option selected value="0">0</option>
@@ -166,6 +180,7 @@
                 </select>
               </div>
             </div>
+            
             <div class="color-overlay-wr form-item">
               <p class="hide">Скрыть</p>
               <label for="colorOverlay">Тип наложения цветов</label>
@@ -192,20 +207,18 @@
       </div>
     </aside>
   </div>
-  <div class="animation">
-    <div class="animation-item animation-item-1">
-    </div>
-    <div class="animation-item animation-item-2">
-    </div>
-    <div class="animation-item animation-item-3">
-    </div>
-    <div class="animation-item animation-item-4">
-    </div>
-    <div class="animation-item animation-item-5">
-    </div>
-  </div>
 
+  <!-- ANIMATION CHANGE BLOCK -->
+    <div class="animation">
+      <div class="animation-item animation-item-1"></div>
+      <div class="animation-item animation-item-2"></div>
+      <div class="animation-item animation-item-3"></div>
+      <div class="animation-item animation-item-4"></div>
+      <div class="animation-item animation-item-5"></div>
+    </div>
 
-  <script src="script.js"></script>
+  <script src="js/service.js"></script>
+  <script src="js/animated.js"></script>
+  <script src="js/event.js"></script>
 </body>
 </html>

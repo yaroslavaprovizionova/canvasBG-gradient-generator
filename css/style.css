@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
-    color: #fff;
+  color: #fff;
   background-color: #5c6063;
 }
 
@@ -115,14 +115,14 @@ aside {
   height: 100%;
 }
 
-.arrow1 {
+.arrowUp {
   border: 6px solid transparent;
   border-bottom: 8px solid #999ea3;
   transform: translateY(5px);
   background-color: #5c6063;
 }
 
-.arrow2  {
+.arrowDown  {
   border: 6px solid transparent;
   border-top: 8px solid #999ea3;
   transform: translateY(7px);
@@ -144,35 +144,28 @@ aside {
   width: 25%;
   overflow: hidden;
   border: 5px solid #293039;
-}
-
-.animation-img {
-  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .animation-item-1 {
-  background-image: url(img/1.png);
-  background-size: cover;
+  background-image: url(../img/1.png);
 }
 
 .animation-item-2 {
-  background-image: url(img/2.png);
-  background-size: cover;
+  background-image: url(../img/2.png);
 }
 
 .animation-item-3 {
-  background-image: url(img/3.png);
-  background-size: cover;
+  background-image: url(../img/3.png);
 }
 
 .animation-item-4 {
-  background-image: url(img/4.png);
-  background-size: cover;
+  background-image: url(../img/4.png);
 }
 
 .animation-item-5 {
-  background-image: url(img/5.png);
-  background-size: cover;
+  background-image: url(../img/5.png);
 }
 
 
